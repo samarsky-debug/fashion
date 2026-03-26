@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Футболка Fashion Future</title>
+  <link rel="stylesheet" href="../css/two.css">
+</head>
+<body>
+  <header>
+    <h1>FASHION FUTURE</h1>
+    <div class="shopping">
+    <button id="cartIconBtn">
+        <img src="../img/shopping-cart.png" alt="Корзина">
+    </button>
+</div>
+  </header>
+
+  <nav>
+    <a href="index.html">Main</a>
+    <a href="manfashion.html">Catalog</a>
+
+  </nav>
+
+  <main>
+<div class="product-card-container">
+    <div class="images-section">
+      <div class="main-img-wrapper">
+        <img src="../img/plate.jpeg" alt="Puffer Jacket" id="main-img" />
+      </div>
+      <div class="thumbnails">
+        <img src="../img/plate.jpeg" alt="вид 1" />
+        <img src="../img/plate2.jpeg" alt="вид 2" />
+      </div>
+    </div>
+    <div class="description-section" data-id="dress">
+      <span class="category">Summer Collection 2026</span>
+      <h2 class="product-title">dress</h2>
+      <p class="description-text">
+          Элегантное платье от Saint Laurent — классика французского шика. Модель выполнена из гладкого черного материала, подчеркивающего утонченность и стиль. Приталенный силуэт акцентирует женственную фигуру, а минималистичный дизайн с аккуратными линиями придает образу изысканность. Идеально подходит для вечерних мероприятий или деловых встреч, сочетая в себе дерзость и элегантность.<br><br>
+
+      </p>
+
+      <span class="section-label">Выберите размер</span>
+      <div class="size-picker">
+        <div class="size-badge">S</div>
+        <div class="size-badge active">M</div>
+        <div class="size-badge">L</div>
+        <div class="size-badge">XL</div>
+      </div>
+
+      <div class="specs">
+        <div class="spec-item">
+          <span>Материал</span>
+          <strong>Хлопок</strong>
+        </div>
+        <div class="spec-item">
+          <span>Артикул</span>
+          <strong>FF-0928</strong>
+        </div>
+      </div>
+
+      <div class="price">9 000 ₽</div>
+      <a href="#" class="add-to-cart-btn">Добавить в корзину</a>
+      <div class="delivery-info">
+        <div class="info-item">📦 Бесплатная доставка от 5 000 ₽</div>
+        <div class="info-item">🔄 Возврат в течение 14 дней</div>
+        <div class="info-item">🛡️ Гарантия качества 1 год</div>
+      </div>
+    </div>
+  </div>
+  </main>
+
+  <footer class="main-footer">
+    <div class="footer-container">
+      <div class="footer-col">
+        <h3>Полезное</h3>
+        <ul>
+          <li>Доставка и оплата</li>
+          <li>Политика конфиденциальности</li>
+          <li>Таблица размеров</li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h3>Контакты</h3>
+        <ul>
+          <li>г. Кемерово, ул. Ленина, 73</li>
+          <li>8 (800) 555-35-35</li>
+          <li>support@fashionfuture.ru</li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h3>Мы в сети</h3>
+        <div class="social-icons" style="font-size: 12px; opacity: 0.6;">
+          Instagram / Telegram / VK
+        </div>
+      </div>
+    </div>
+  </footer>
+
+<div class="cart-overlay" id="cartOverlay"></div>
+  <div class="cart-panel" id="cartPanel">
+    <div class="cart-header">
+      <h2>Корзина</h2>
+      <button class="close-cart" id="closeCart">&times;</button>
+    </div>
+    <div class="cart-items" id="cartItems"></div>
+    <div class="cart-footer" id="cartFooter">
+      <div class="cart-total">
+        <span>Итого:</span>
+        <span id="cartTotal">0 ₽</span>
+      </div>
+      <button class="checkout-btn" id="checkoutBtn">Оформить заказ</button>
+    </div>
+  </div>
+
+  <script src="../js/korzina.js"></script>
+</body>
+</html>

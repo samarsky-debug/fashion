@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fashion Future</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <div class="header-content">
+      <img class="header-logo" src="img/logo.png" alt="Fashion Future">
+      <h1>Fashion Future</h1>
+      <div class="shopping">
+        <button type="image" id="cartIconBtn">
+          <img src="img/shopping-cart.png" alt="Корзина">
+        </button>
+      </div>
+    </div>
+  </header>
+  <nav>
+    <a href="category.html">Мужчине</a>
+    <a href="womencategory.html">Женщине</a>
+    <a href="about-us.html">О нас</a>
+  </nav>
+  <main>
+    <section class="hero">
+      <div class="hero-text">
+        <h2>Одежда как<br>вторая кожа</h2>
+        <p>Семиотика стиля, материальный манифест вашего «Я». Откройте новую коллекцию.</p>
+        <a href="about-us.html" class="btn btn-outline">О бренде</a>
+      </div>
+      <div class="hero-image">
+        <img src="img/t-shirt.jpg" alt="hero style" style="object-fit: cover; width: 100%; height: 100%;">
+      </div>
+    </section>
+    <div class="fashion-container">
+      <div class="fashionone">
+        <p>Одежда — это не просто прикладной инструмент для защиты тела от холода или зноя. Это сложнейшая семиотическая система, «вторая кожа» и материальный манифест нашего внутреннего «Я». Если вдуматься, одежда — это единственный объект материального мира, который сопровождает человека от первого вздоха до последнего, становясь молчаливым свидетелем его эволюции.</p>
+      </div>
+      <div class="fashiontwo">
+        <p>Одежда как граница между «Я» и «Миром». Одежда представляет собой пограничное состояние. Она обозначает предел нашего физического тела и начало внешнего пространства. Это мембрана, которая одновременно защищает нашу уязвимость и транслирует нашу силу. Выбирая, что надеть, мы бессознательно решаем, какую часть своей души мы готовы открыть миру, а какую — оставить в сакральной тишине приватности.</p>
+      </div>
+    </div>
+    <section id="men" class="category">
+      <div class="bestseller"><h1>Бестселлеры</h1></div>
+      <div class="products">
+        <div class="product" data-id="tshirt-1" data-name="Футболка" data-price="799" data-image="img/t-shirt.jpg">
+          <a href="items/T-shirt.html"><img src="img/t-shirt.jpg" alt="Футболка мужская"></a>
+          <div class="product-meta">
+            <h3>Футболка</h3>
+            <p class="price">1000 ₽</p>
+            <a href="items/T-shirt.html" class="btn-small">Подробнее</a>
+          </div>
+        </div>
+        <div class="product" data-id="puffer-1" data-name="Куртка Puffer" data-price="4999" data-image="jacket/puffer.jpg">
+          <a href="items/puffer.html"><img src="jacket/puffer.jpg" alt="Куртка мужская"></a>
+          <div class="product-meta">
+            <h3>Куртка</h3>
+            <p class="price">12 990 ₽</p>
+            <a href="items/puffer.html" class="btn-small">Подробнее</a>
+          </div>
+        </div>
+        <div class="product" data-id="jeans-1" data-name="Джинсы" data-price="1999" data-image="img/jeansman.jpg">
+          <a href="items/jeansman.html"><img src="img/jeansman.jpg" alt="Джинсы мужские"></a>
+          <div class="product-meta">
+            <h3>Джинсы</h3>
+            <p class="price">4990 ₽</p>
+            <a href="items/jeansman.html" class="btn-small">Подробнее</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="women" class="category">
+      <div class="products">
+        <div class="product" data-id="plate-1" data-name="Платье" data-price="3499" data-image="img/plate.jpeg">
+          <a href="items/plate.html"><img src="img/plate.jpeg" alt="Платье женское"></a>
+          <div class="product-meta">
+            <h3>Платье</h3>
+            <p class="price">9 000 ₽</p>
+            <a href="items/plate.html" class="btn-small">Подробнее</a>
+          </div>
+        </div>
+        <div class="product" data-id="cesarepaccotiheels" data-name="Туфли" data-price="30000" data-image="img/cesarepaccoti.jpg">
+          <a href="items/cesarepaccoti.html"><img src="img/cesarepaccotiheels.jpg" alt="Туфли женская"></a>
+          <div class="product-meta">
+            <h3>Туфли</h3>
+            <p class="price">30 000 ₽</p>
+            <a href="items/cesarepaccoti.html" class="btn-small">Подробнее</a>
+          </div>
+        </div>
+        <div class="product" data-id="yslheels" data-name="Туфли" data-price="30000" data-image="img/yslheels.jpg">
+          <img src="img/yslheels.jpg" alt="Юбка">
+          <div class="product-meta">
+            <h3>Туфли</h3>
+            <p class="price">25 000 ₽</p>
+            <a href="items/yslheels.html" class="btn-small">Подробнее</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- панель корзины -->
+  <div class="cart-overlay" id="cartOverlay"></div>
+  <div class="cart-panel" id="cartPanel">
+    <div class="cart-header">
+      <h2>Корзина</h2>
+      <button class="close-cart" id="closeCart">&times;</button>
+    </div>
+    <div class="cart-items" id="cartItems"></div>
+    <div class="cart-footer" id="cartFooter">
+      <div class="cart-total">
+        <span>Итого:</span>
+        <span id="cartTotal">0 ₽</span>
+      </div>
+      <button class="checkout-btn" id="checkoutBtn">Оформить заказ</button>
+    </div>
+  </div>
+
+  <footer class="main-footer">
+    <div class="footer-container">
+      <div class="footer-col logo-info">
+        <div class="legal-info">
+          <p>ИП Самарский Дмитрий Константинович</p>
+          <p>ИНН 77777777777</p>
+          <p>ОГРНИП 777777777777777</p>
+          <p>FashionFuture@yandex.ru</p>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h3>Полезное</h3>
+        <ul>
+          <li><a href="#">Доставка и оплата</a></li>
+          <li><a href="#">Политика конфиденциальности</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h3>Контакты</h3>
+        <p>Адрес оффлайн магазина — г. Кемерово, ул. Ленина, 73</p>
+        <p class="phone">Для заказа онлайн и в другие города<br>+7 800 555 35 35</p>
+        <div class="social-icons">
+          <a href="https://t.me/">Telegram</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+<script src="js/korzina.js"></script>
+</body>
+</html>
